@@ -1,0 +1,7 @@
+[user]
+	email = og402@nyu.edu
+	name = Oleg Grishin
+[push]
+	default = current
+[credential]
+	helper = cache --timeout=86400
