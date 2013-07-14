@@ -13,3 +13,5 @@ function gitm() {
 alias reset_bash='. $HOME/.bashrc'
 alias cp='cp -i'
 alias mv='mv -i'
+
+bind '"\t":menu-complete'
