@@ -25,5 +25,10 @@ set hlsearch
 set smartindent
 
 execute pathogen#infect()
-syntax on
+syntax enable 
+set t_Co=256
+let g:solarized_termcolors=256
+let g:solarized_bold=0 
+set background=dark
+colorscheme solarized
 filetype plugin indent on
