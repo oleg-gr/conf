@@ -1,6 +1,7 @@
 "Oleg Grishin
 
 set nocompatible
+execute pathogen#infect()
 
 imap jj <Esc>
 
@@ -11,6 +12,22 @@ set ruler
 set showcmd 
 set nowrap 
 set number
+
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+let NERDTreeShowHidden=1
+autocmd vimenter * if !argc() | NERDTree | endif
+
+nmap <silent> <C-k> :wincmd k<CR>
+nmap <silent> <C-j> :wincmd j<CR>
+nmap <silent> <C-h> :wincmd h<CR>
+nmap <silent> <C-l> :wincmd l<CR>
+nmap <silent> <C-Right> <C-W><
+nmap <silent> <C-Left> <C-W>>
+nmap <silent> <C-Down> <C-W>+
+nmap <silent> <C-Up> <C-W>-
+
+let python_highlight_all = 1
 
 set expandtab
 set smarttab
@@ -24,7 +41,6 @@ set hlsearch
 
 set smartindent
 
-execute pathogen#infect()
 syntax enable 
 set t_Co=256
 let g:solarized_termcolors=256
