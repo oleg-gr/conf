@@ -6,4 +6,4 @@
 [credential]
 	helper = cache --timeout=86400
 [core]
-	excludesfile = ~/.cvsignore
+	excludesfile = /home/og/.gitignore_global

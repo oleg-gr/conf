@@ -3,4 +3,5 @@ ln -sfn $path/.vim/ $HOME
 ln -sf $path/.vimrc $HOME 
 ln -sf $path/.bashrc $HOME 
 ln -sf $path/.gitconfig $HOME 
+ln -sf $path/.gitignore_global $HOME 
 ln -sf $path/.bash_profile $HOME 
