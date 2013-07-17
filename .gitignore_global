@@ -28,7 +28,7 @@ Compiled source #
 
 # Swap files #
 ######################
-#.sw?
+*.sw?
 
 # OS generated files #
 ######################

@@ -18,6 +18,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 let NERDTreeShowHidden=1
 autocmd vimenter * if !argc() | NERDTree | endif
 
+set dir=~/.vimswap//,/var/tmp//,/tmp//,.
+
 nmap <silent> <C-k> :wincmd k<CR>
 nmap <silent> <C-j> :wincmd j<CR>
 nmap <silent> <C-h> :wincmd h<CR>

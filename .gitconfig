@@ -1,3 +1,4 @@
+
 [user]
 	email = og402@nyu.edu
 	name = Oleg Grishin
@@ -6,4 +7,4 @@
 [credential]
 	helper = cache --timeout=86400
 [core]
-	excludesfile = /home/og/.gitignore_global
+	excludesfile = $HOME/.gitignore_global
